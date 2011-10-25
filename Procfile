@@ -1,1 +1,1 @@
-app: bin/hubot -a campfire -n Agnes
+app: bin/hubot -a campfire -n Hubot
