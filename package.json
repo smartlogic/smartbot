@@ -16,6 +16,7 @@
 
   "dependencies": {
     "hubot": ">= 1.0.2",
-    "hubot-scripts": ">= 1.0.0"
+    "hubot-scripts": ">= 1.0.0",
+    "wolfram": "0.1.1"
   }
 }
