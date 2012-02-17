@@ -2,7 +2,7 @@
 
 module.exports = (robot) ->
   robot.hear /./i, (msg) -> 
-    if msg.message.user.name == "Eric Oestrich"
+    if msg.message.user.name == "Sam Goldman"
       words = msg.message.text.split(" ")
 
       longest = ""
@@ -14,4 +14,4 @@ module.exports = (robot) ->
             longestSize = word.length
             longest = word
 
-      msg.send longest
+      msg.send "Hubot: define me " +longest
