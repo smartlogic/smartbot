@@ -3,7 +3,7 @@
 module.exports = (robot) ->
   robot.hear /./i, (msg) -> 
     if msg.message.user.name == "Eric Oestrich"
-      words = msg.text.split(" ")
+      words = msg.message.text.split(" ")
 
       longest = ""
       longestSize = 0
