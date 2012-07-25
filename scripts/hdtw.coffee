@@ -58,7 +58,7 @@ class HowDoesThatWork
 
 module.exports = (robot) ->
   hdtw = new HowDoesThatWork robot
-  robot.hear /(\S+[^+\s])!!(\s|$)/, (msg) ->
+  robot.hear /(\S+[^+\s])!!+(\s|$)/, (msg) ->
     subject = msg.match[1].toLowerCase()
     hdtw.increment subject
     msg.send "#{subject} #{hdtw.incrementResponse()} (How does that work count: #{hdtw.get(subject)})"
