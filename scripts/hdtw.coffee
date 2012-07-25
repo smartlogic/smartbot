@@ -69,7 +69,7 @@ module.exports = (robot) ->
     msg.send "#{subject} has had its how does that work count scattered to the winds."
 
   robot.respond /hdtw( best)?$/i, (msg) ->
-    verbiage = ["The Best"]
+    verbiage = ["The Worst"]
     for item, rank in hdtw.top()
       verbiage.push "#{rank + 1}. #{item.name} - #{item.hdtw}"
     msg.send verbiage.join("\n")
