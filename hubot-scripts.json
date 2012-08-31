@@ -1,7 +1,7 @@
 [
   "abstract.coffee",
   "adult.coffee",
-  "ambush.coffee"
+  "ambush.coffee",
   "bees.coffee",
   "days_since.coffee",
   "decide.coffee",
