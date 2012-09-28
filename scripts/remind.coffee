@@ -112,7 +112,7 @@ module.exports = (robot) ->
 
   robot.respond /remind (.*) in ((?:(?:\d+) (?:weeks?|days?|hours?|hrs?|minutes?|mins?|seconds?|secs?)[ ,]*(?:and)? +)+)to (.*)/i, (msg) ->
     user = switch msg.match[1]
-      when "me" then msg.message.user
+      when "me" then findUser msg.message.user
       else findUser msg.match[1]
     time = msg.match[2]
     action = msg.match[3]
