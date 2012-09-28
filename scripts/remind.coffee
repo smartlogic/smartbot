@@ -85,6 +85,12 @@ class Reminder
     else
       @from.name
 
+  toName: ->
+    if @for == @from
+      'you'
+    else
+      @for.name
+
 module.exports = (robot) ->
 
   # Find the user by user name from hubot's brain.
@@ -113,4 +119,4 @@ module.exports = (robot) ->
     from = msg.message.user
     reminder = new Reminder user, from, time, action
     reminders.add reminder
-    msg.send 'I\'ll remind ' + user + ' to ' + action + ' on ' + reminder.dueDate()
+    msg.send 'I\'ll remind ' + reminder.toName + ' to ' + action + ' on ' + reminder.dueDate()
