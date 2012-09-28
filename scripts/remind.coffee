@@ -42,7 +42,7 @@ class Reminders
       if @cache.length > 0
         trigger = =>
           reminder = @removeFirst()
-          @robot.send reminder.for, reminder.for.name + ', ' + reminder.fromName + ' asked me to remind you to ' + reminder.action
+          @robot.send reminder.for, reminder.for.name + ', ' + reminder.fromName() + ' asked me to remind you to ' + reminder.action
           @queue()
         @current_timeout = setTimeout trigger, @cache[0].due - now
 
@@ -119,4 +119,4 @@ module.exports = (robot) ->
     from = msg.message.user
     reminder = new Reminder user, from, time, action
     reminders.add reminder
-    msg.send 'I\'ll remind ' + reminder.toName + ' to ' + action + ' on ' + reminder.dueDate()
+    msg.send 'I\'ll remind ' + reminder.toName() + ' to ' + action + ' on ' + reminder.dueDate()
