@@ -108,6 +108,10 @@ module.exports = (robot) ->
     else
       false
 
+  robot.respond /whois ([\S]+ ?[\S]*)/i, (msg) ->
+    user = findUser msg.match[1]
+    msg.send msg.match[1] + ' is ' + user
+
   reminders = new Reminders robot
 
   robot.respond /remind ([\S]+ ?[\S]*) in ((?:(?:\d+) (?:weeks?|days?|hours?|hrs?|minutes?|mins?|seconds?|secs?)[ ,]*(?:and)? +)+)to (.*)/i, (msg) ->
