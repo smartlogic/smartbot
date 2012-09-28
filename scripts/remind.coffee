@@ -42,7 +42,7 @@ class Reminders
       if @cache.length > 0
         trigger = =>
           reminder = @removeFirst()
-          @robot.send reminder.for, reminder.for.name + ', ' + reminder.fromName() + ' asked me to remind you to ' + reminder.action
+          @robot.send reminder.for, reminder.forName() + ', ' + reminder.fromName() + ' asked me to remind you to ' + reminder.action
           @queue()
         @current_timeout = setTimeout trigger, @cache[0].due - now
 
@@ -110,7 +110,7 @@ module.exports = (robot) ->
 
   reminders = new Reminders robot
 
-  robot.respond /remind (.*) in ((?:(?:\d+) (?:weeks?|days?|hours?|hrs?|minutes?|mins?|seconds?|secs?)[ ,]*(?:and)? +)+)to (.*)/i, (msg) ->
+  robot.respond /remind ([\S]+ ?[\S]*) in ((?:(?:\d+) (?:weeks?|days?|hours?|hrs?|minutes?|mins?|seconds?|secs?)[ ,]*(?:and)? +)+)to (.*)/i, (msg) ->
     user = switch msg.match[1]
       when "me" then findUser msg.message.user
       else findUser msg.match[1]
