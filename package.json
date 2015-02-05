@@ -1,33 +1,35 @@
 {
-  "name":        "hosted-hubot",
-  "version":     "2.6.1",
-  "author":      "GitHub Inc.",
-  "keywords":    "github hubot campfire bot",
-  "description": "A simple helpful Robot for your Company",
-  "licenses":     [{
-    "type":       "MIT",
-    "url":        "http://github.com/github/hubot/raw/master/LICENSE"
-  }],
-
-  "engines": {
-    "node": "0.10.13"
-  },
-
-  "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/github/hubot.git"
-  },
-
+  "name": "smartbot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Dan Ivovich <dan@smartlogic.io>",
+  "description": "So Smart and a Bot",
   "dependencies": {
     "htmlparser": "1.7.6",
-    "hubot": "2.6.1",
-    "hubot-scripts": "2.5.1",
-    "jsdom": "0.8.1",
-    "ntwitter": "0.5.0",
-    "optparse": "1.0.3",
-    "soupselect": "0.2.0",
-    "underscore": "1.5.1",
-    "underscore.string": "2.3.3"
+    "hubot": "^2.11.0",
+    "hubot-darksky": "^1.0.2",
+    "hubot-diagnostics": "0.0.1",
+    "hubot-google-images": "^0.1.2",
+    "hubot-google-translate": "^0.1.0",
+    "hubot-help": "^0.1.1",
+    "hubot-heroku-keepalive": "0.0.4",
+    "hubot-maps": "0.0.1",
+    "hubot-plusplus": "^1.1.2",
+    "hubot-pugme": "^0.1.0",
+    "hubot-redis-brain": "0.0.2",
+    "hubot-rules": "^0.1.0",
+    "hubot-scripts": "^2.5.16",
+    "hubot-shipit": "^0.1.1",
+    "hubot-slack": "^3.2.1",
+    "hubot-tell": "^1.2.3",
+    "hubot-youtube": "^0.1.2",
+    "jsdom": "^3.1.0",
+    "optparse": "^1.0.5",
+    "soupselect": "^0.2.0",
+    "underscore": "^1.7.0",
+    "underscore.string": "^3.0.2"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
-

@@ -1,0 +1,16 @@
+[
+  "hubot-diagnostics",
+  "hubot-help",
+  "hubot-heroku-keepalive",
+  "hubot-pugme",
+  "hubot-maps",
+  "hubot-redis-brain",
+  "hubot-rules",
+  "hubot-shipit",
+  "hubot-youtube",
+  "hubot-darksky",
+  "hubot-tell",
+  "hubot-plusplus",
+  "hubot-google-translate",
+  "hubot-google-images"
+]
