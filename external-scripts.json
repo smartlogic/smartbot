@@ -12,5 +12,12 @@
   "hubot-tell",
   "hubot-plusplus",
   "hubot-google-translate",
-  "hubot-google-images"
+  "hubot-google-images",
+  "hubot-victory",
+  "hubot-imgur_puns",
+  "hubot-caniuse",
+  "hubot-voting",
+  "hubot-wolfram",
+  "hubot-codinglove",
+  "hubot-devops-reactions"
 ]
