@@ -15,7 +15,6 @@
     "hubot-google-images": "^0.1.2",
     "hubot-google-translate": "^0.1.0",
     "hubot-help": "^0.1.1",
-    "hubot-heroku-keepalive": "0.0.4",
     "hubot-imgur_puns": "^1.0.0",
     "hubot-maps": "0.0.1",
     "hubot-plusplus": "^1.1.2",
@@ -34,7 +33,10 @@
     "optparse": "^1.0.5",
     "soupselect": "^0.2.0",
     "underscore": "^1.7.0",
-    "underscore.string": "^3.0.2"
+    "underscore.string": "^3.0.2",
+    "lodash" : "^3.10.1",
+    "moment" : "^2.10.6",
+    "chrono-node" : "^1.0.6"
   },
   "engines": {
     "node": "0.10.x"
